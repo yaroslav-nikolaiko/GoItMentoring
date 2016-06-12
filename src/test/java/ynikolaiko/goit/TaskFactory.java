@@ -1,5 +1,6 @@
 package ynikolaiko.goit;
 
+import ynikolaiko.goit.factory.StasyukTaskFactory;
 import ynikolaiko.goit.factory.SustavovTaskFactory;
 import ynikolaiko.goit.factory.ToporynskyiTaskFactory;
 import ynikolaiko.goit.module5.task1.MinMaxSearcher;
@@ -13,6 +14,7 @@ public abstract class TaskFactory {
         switch (student) {
             case SUSTAVOV: return new SustavovTaskFactory();
             case TOPORYNSKYI: return new ToporynskyiTaskFactory();
+            case STASYUK: return new StasyukTaskFactory();
         }
         return null;
     }
