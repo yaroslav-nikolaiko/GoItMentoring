@@ -1,5 +1,6 @@
 package ynikolaiko.goit;
 
+import ynikolaiko.goit.factory.ShevelTaskFactory;
 import ynikolaiko.goit.factory.StasyukTaskFactory;
 import ynikolaiko.goit.factory.SustavovTaskFactory;
 import ynikolaiko.goit.factory.ToporynskyiTaskFactory;
@@ -15,6 +16,7 @@ public abstract class TaskFactory {
             case SUSTAVOV: return new SustavovTaskFactory();
             case TOPORYNSKYI: return new ToporynskyiTaskFactory();
             case STASYUK: return new StasyukTaskFactory();
+            case VSHEVEL: return new ShevelTaskFactory();
         }
         return null;
     }
