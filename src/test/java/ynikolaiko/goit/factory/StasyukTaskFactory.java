@@ -27,12 +27,12 @@ public class StasyukTaskFactory extends TaskFactory{
 
             @Override
             public int getMin() {
-                return minMaxSearcher.MinValue(input);
+                return Array.minValue(input);
             }
 
             @Override
             public int getMax() {
-                return minMaxSearcher.MaxValue(input);
+                return Array.maxValue(input);
             }
         };
     }
