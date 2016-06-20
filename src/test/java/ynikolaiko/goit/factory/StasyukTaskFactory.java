@@ -17,12 +17,10 @@ public class StasyukTaskFactory extends TaskFactory{
     public MinMaxSearcher minMaxSearcher() {
         return new MinMaxSearcher() {
             int[] input;
-            Array minMaxSearcher;
 
             @Override
             public void set(int[] input) {
                 this.input = input;
-                minMaxSearcher = new Array();
             }
 
             @Override
